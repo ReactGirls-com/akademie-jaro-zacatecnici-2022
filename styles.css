@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tomorrow;
+  font-weight: 800;
+  background-color: #1b1464;
+  color: white;
+}
+
+h1,
+h2 {
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+li {
+  font-size: 20px;
+  line-height: 160%;
+  list-style-type: none;
+  padding-top: 32px;
+}
+
+li,
+p,
+button {
+  font-weight: 700;
+}
+
+.white-box {
+  background-color: #fff;
+  color: #1b1464;
+  text-align: center;
+  width: 624px;
+  height: 416px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  margin-bottom: 68px;
+}
+
+.title {
+  text-align: center;
+}
