@@ -8,6 +8,7 @@ body {
   font-weight: 800;
   background-color: #1b1464;
   color: white;
+  min-height: 100vh;
 }
 
 h1,
@@ -31,6 +32,10 @@ li {
   padding-top: 32px;
 }
 
+ul {
+  padding: 0;
+}
+
 li,
 p,
 button {
@@ -41,13 +46,91 @@ button {
   background-color: #fff;
   color: #1b1464;
   text-align: center;
-  width: 624px;
+  width: 40vw;
   height: 416px;
   padding-top: 96px;
   padding-bottom: 96px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
   margin-bottom: 68px;
 }
 
 .title {
   text-align: center;
+  margin: 102px 0;
+}
+
+.number-bar {
+  margin-top: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.number-bar p {
+  font-size: 48px;
+}
+
+.star-box {
+  position: relative;
+}
+
+.question-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-box {
+  width: 100%;
+  background-color: #fff;
+  color: #1b1464;
+  text-align: center;
+  padding-top: 86px;
+  padding-bottom: 86px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  text-transform: uppercase;
+}
+
+form {
+  padding: 0;
+  display: flex;
+}
+
+.input-number {
+  height: 82px;
+  width: 200px;
+  border: none;
+  background-color: #1b1464;
+  color: grey;
+  font-size: 48px;
+
+  margin-right: 32px;
+}
+
+.guess-button {
+  height: 82px;
+  width: 365px;
+  background-color: gray;
+  color: #1b1464;
+  font-size: 32px;
+  border: none;
+  outline: none;
+}
+
+.form-font {
+  font-family: Tomorrow;
+  text-align: center;
+  display: inline-block;
 }
