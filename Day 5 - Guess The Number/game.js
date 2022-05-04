@@ -17,6 +17,12 @@ window.addEventListener('load', function () {
 
   let titleElement = document.querySelector('.title')
 
+  let playAgainButton = document.querySelector('.play-again-button')
+
+  playAgainButton.addEventListener('click', function () {
+    document.location.reload()
+  })
+
   guessForm.addEventListener('submit', function (event) {
     event.preventDefault()
     let userGuess = Number(inputNumber.value);
@@ -25,6 +31,7 @@ window.addEventListener('load', function () {
 
     if (userGuess === randomNumber) {
       titleElement.innerHTML = '🎉 uhodla jsi na ' + guessCounter + ' pokusů 🎉'
+      document.body.className = 'winner'
     } else if (userGuess > randomNumber) {
       titleElement.innerHTML = 'myslim si mensi cislo'
     } else {

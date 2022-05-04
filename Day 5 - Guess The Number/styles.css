@@ -146,8 +146,27 @@ form {
   background-color: gray;
 }
 
+
 .form-font {
   font-family: Tomorrow;
   text-align: center;
   display: inline-block;
+}
+
+
+.play-again-button {
+  display: none;
+}
+
+
+.winner {
+  background: red;
+}
+
+.winner .play-again-button {
+  display: inline-block;
+}
+
+.winner .guess-button {
+  display: none;
 }
