@@ -9,6 +9,8 @@ window.addEventListener('load', function () {
   let randomNumber = generateRandomNumber(0, 100);
   console.log('random number', randomNumber);
 
+  let guessCounter = 0
+
   let guessForm = document.querySelector('.guess-form');
 
   let inputNumber = document.querySelector('.input-number');
@@ -19,12 +21,14 @@ window.addEventListener('load', function () {
     event.preventDefault()
     let userGuess = Number(inputNumber.value);
 
+    guessCounter = guessCounter + 1
+
     if (userGuess === randomNumber) {
-      titleElement.innerHTML = '🎉 uhodla jsi 🎉'
+      titleElement.innerHTML = '🎉 uhodla jsi na ' + guessCounter + ' pokusů 🎉'
     } else if (userGuess > randomNumber) {
-      console.log('myslim si mensi cislo')
+      titleElement.innerHTML = 'myslim si mensi cislo'
     } else {
-      console.log('myslim si vetsi cislo')
+      titleElement.innerHTML = 'myslim si vetsi cislo'
     }
 
   });
