@@ -13,12 +13,14 @@ window.addEventListener('load', function () {
 
   let inputNumber = document.querySelector('.input-number');
 
+  let titleElement = document.querySelector('.title')
+
   guessForm.addEventListener('submit', function (event) {
     event.preventDefault()
     let userGuess = Number(inputNumber.value);
 
     if (userGuess === randomNumber) {
-      console.log('uhodla jsi')
+      titleElement.innerHTML = '🎉 uhodla jsi 🎉'
     } else if (userGuess > randomNumber) {
       console.log('myslim si mensi cislo')
     } else {
