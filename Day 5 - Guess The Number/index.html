@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess the number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="game.js"></script>
+  </head>
+
+  <body>
+    <h1 class="title">Can you guess the secret number?</h1>
+
+    <section class="main">
+      <div class="white-box">
+        <h2>HOW TO PLAY</h2>
+        <ul>
+          <li>Guess the secret number between 0 and 100.</li>
+          <li>If you guess incorrect number, you will get a hint.</li>
+          <li>If you guess correct number, you</li>
+        </ul>
+      </div>
+
+      <div class="white-box">
+        <h2>SECRET NUMBER</h2>
+        <div class="number-bar">
+          <p class="number right-align">0</p>
+          <p>&lt;</p>
+          <div class="star-box">
+            <img class="star" src="./star.svg" alt="green star" />
+            <p class="question-mark">?</p>
+          </div>
+          <p>&lt;</p>
+          <p class="number">100</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="bottom-box">
+      <h2>Number between 0 and 100:</h2>
+      <form>
+        <input
+          required
+          placeholder="55"
+          type="number"
+          min="1"
+          max="99"
+          class="input-number form-font"
+        />
+        <button class="guess-button form-font" type="submit">GUESS</button>
+      </form>
+    </div>
+
+    <!--
+    <h2>Number between 0 and 100:</h2>
+    <form>
+      <input required type="number" min="1" max="99" />
+      <button type="submit">GUESS</button>
+
+      <label>
+        <input type="radio" name="first_radio" />
+        radio 1
+      </label>
+      <label>
+        <input type="radio" name="first_radio" />
+        radio 2
+      </label>
+
+      <input type="date" />
+      <input type="email" />
+      <input type="file" />
+      <img src="star.svg" />
+      <select>
+        <option>option 1</option>
+        <option>option 2</option>
+      </select>
+    </form>
+    -->
+  </body>
+</html>

@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tomorrow;
+  font-weight: 800;
+  background-color: #1b1464;
+  color: white;
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+li {
+  font-size: 20px;
+  line-height: 160%;
+  list-style-type: none;
+  padding-top: 32px;
+}
+
+ul {
+  padding: 0;
+}
+
+li,
+p,
+button {
+  font-weight: 700;
+}
+
+.white-box {
+  background-color: #fff;
+  color: #1b1464;
+  text-align: center;
+  width: 40vw;
+  height: 416px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 68px;
+}
+
+.title {
+  text-align: center;
+  margin: 102px 0;
+}
+
+.number-bar {
+  margin-top: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.number-bar p {
+  font-size: 48px;
+}
+
+.number {
+  width: 100%;
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.star-box {
+  position: relative;
+}
+
+.question-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-box {
+  width: 100%;
+  background-color: #fff;
+  color: #1b1464;
+  text-align: center;
+  padding-top: 86px;
+  padding-bottom: 86px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  text-transform: uppercase;
+}
+
+form {
+  padding: 0;
+  display: flex;
+}
+
+.input-number {
+  height: 82px;
+  width: 200px;
+  border: none;
+  background-color: #1b1464;
+  color: white;
+  font-size: 48px;
+
+  margin-right: 32px;
+}
+
+.input-number::placeholder {
+  color: grey;
+}
+
+.guess-button {
+  height: 82px;
+  width: 365px;
+  background-color: #00ffc4;
+  color: #1b1464;
+  font-size: 32px;
+  border: none;
+  outline: none;
+}
+
+.guess-button:disabled {
+  background-color: gray;
+}
+
+.form-font {
+  font-family: Tomorrow;
+  text-align: center;
+  display: inline-block;
+}
