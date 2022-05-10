@@ -1,0 +1,23 @@
+.before-game .playfield {
+	display: none;
+}
+.before-game .new-game-button {
+	display: none;
+}
+
+.during-game .playfield {
+	display: block;
+}
+.during-game .start-game-button {
+	display: none;
+}
+
+.after-game .rules {
+	display: none;
+}
+.after-game .playfield {
+	display: none;
+}
+.after-game .start-game-button {
+	display: none;
+}

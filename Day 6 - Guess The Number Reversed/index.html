@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guess the number reversed</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="game.js"></script>
+</head>
+
+<!-- body has the following classes expressing the game status: before-game, during-game, and after-game -->
+<body class="before-game">
+
+	<header>
+		<h1>Guess the number reversed</h1>
+	</header>
+
+	<section class="rules">
+		<ul>
+			<li>Think of a number between <span class="minimum"></span> and <span class="maximum"></span> (inclusive).
+			</li>
+			<li>After you press the start button, I'll try to guess your number.</li>
+			<li>Your task is to tell me whether my guess is too low, too high or correct.</li>
+			<li>Please, do not cheat. (I will know anyway.)</li>
+		</ul>
+	</section>
+
+	<section class="playfield">
+		<ul>
+			<li>My guess: <span class="current-guess"></span></li>
+			<li>Number of guesses: <span class="number-of-guesses"></span></li>
+		</ul>
+		<div>
+			<button class="too-low-button">Your guess is too low!</button>
+			<button class="bingo-button">Bingo!</button>
+			<button class="too-high-button">Your guess is too high!</button>
+		</div>
+	</section>
+
+	<section class="new-game-section">
+		<button class="start-game-button">Start the game</button>
+		<button class="new-game-button">New game</button>
+	</section>
+
+	<footer>
+		<p>Created as an exercise during ReactGirls Academy.</p>
+	</footer>
+
+</body>
+
+</html>
